@@ -1,0 +1,52 @@
+.weather-prev {
+    @include flexColumn;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding: 20px 0px;
+
+    .temperature {
+        font-size: 20px;
+        display: flex;
+        font-size: 30px;
+        font-weight: bolder;
+        color: grey;
+        background: $glassy-effects;
+        border-radius: 15px;
+
+        @include displayMiniMobile {
+            flex-direction: column;
+        }
+        
+        >span, >div {
+            padding: 10px;
+        }
+
+        >span {
+            display: flex;
+            align-self: center;
+            line-height: 60px;
+            font-size: 40px;
+        }
+        >div {
+            @include flexColumn;
+            text-align: center;
+           
+        }
+    }
+
+    .date {
+        color: grey;
+        text-align: center;
+    }
+
+    .description {
+        color: green;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    img {
+        // border: solid red;
+        width: 30%;
+    }
+}

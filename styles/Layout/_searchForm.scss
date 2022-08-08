@@ -1,0 +1,33 @@
+.search-form {
+    @include flexColumn;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px;
+
+
+    input {
+        width: 50%;
+        margin: 5px 0;
+        height: 2rem;
+        font-size: 18px;
+        border-radius: 20px;
+        
+        &:nth-child(1) {
+            padding: 0px 5px;
+            border: none;
+            text-align: center;
+        }
+
+        &:nth-child(2) {
+            background: $buttonBackgound;
+            cursor: pointer;
+            transition: all 200ms;
+            border-color: transparent;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+
+}

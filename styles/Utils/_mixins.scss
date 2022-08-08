@@ -1,0 +1,22 @@
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin linkInterest {
+    color: $hoverTextColor;
+    transform: scale(1.02);
+    padding-left: 5px;
+}
+
+@mixin displayMobile {
+    @media screen and (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin displayMiniMobile {
+    @media screen and (max-width: 333px) {
+        @content;
+    }
+}

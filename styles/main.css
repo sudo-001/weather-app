@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu;
+}
+
+.weather-prev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  padding: 20px 0px;
+}
+.weather-prev .temperature {
+  font-size: 20px;
+  display: flex;
+  font-size: 30px;
+  font-weight: bolder;
+  color: grey;
+  background: rgba(202, 200, 200, 0.884);
+  border-radius: 15px;
+}
+@media screen and (max-width: 333px) {
+  .weather-prev .temperature {
+    flex-direction: column;
+  }
+}
+.weather-prev .temperature > span, .weather-prev .temperature > div {
+  padding: 10px;
+}
+.weather-prev .temperature > span {
+  display: flex;
+  align-self: center;
+  line-height: 60px;
+  font-size: 40px;
+}
+.weather-prev .temperature > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.weather-prev .date {
+  color: grey;
+  text-align: center;
+}
+.weather-prev .description {
+  color: green;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.weather-prev img {
+  width: 30%;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 5px;
+}
+.search-form input {
+  width: 50%;
+  margin: 5px 0;
+  height: 2rem;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.search-form input:nth-child(1) {
+  padding: 0px 5px;
+  border: none;
+  text-align: center;
+}
+.search-form input:nth-child(2) {
+  background: cyan;
+  cursor: pointer;
+  transition: all 200ms;
+  border-color: transparent;
+}
+.search-form input:nth-child(2):hover {
+  transform: scale(1.05);
+}
+
+.temp {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(255, 0, 0, 0.01);
+}
+
+.wrapper {
+  background: url(../../images/bg3.jpg) no-repeat right/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container {
+  background: rgba(255, 255, 255, 0.3);
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  z-index: 10;
+}
+@media screen and (max-width: 700px) {
+  .wrapper .container {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
