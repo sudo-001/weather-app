@@ -28,7 +28,7 @@ form.addEventListener("submit", async function (e) {
 let isLoading = false;
 
 function getCoordonates(name) {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=10&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=10&appid=${apiKey}`)
         .then(res => res.json())
         .then(data => {
             isLoading = true;
@@ -63,10 +63,10 @@ function getWeatherData(lat, lon) {
             feels_like_temp.innerHTML = data.main.feels_like + "°";
             let icon = data.weather[0].icon.replace('n', 'd');
             console.log(icon);
-
-            image.setAttribute("src", ` http://openweathermap.org/img/wn/${icon}.png`);
-            if (data.main.temp <= 25) {
-                hotDeg.style.backgroundColor = `rgba(255, 255, 255, 0.${(Math.floor(data.main.temp))})`;
+            
+            image.setAttribute("src", ` https://openweathermap.org/img/wn/${icon}.png`);
+            if (data.main.temp <= 25 ) {
+                hotDeg.style.backgroundColor = `rgba(255, 255, 255, 0.${(Math.floor(data.main.temp))})`;   
             } else {
                 hotDeg.style.backgroundColor = `rgba(${(Math.floor(data.main.temp))}, 0,0, 0.4)`;
             }
