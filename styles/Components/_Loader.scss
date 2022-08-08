@@ -1,0 +1,19 @@
+.loader {
+    border: groove 8px cyan;
+    border-radius: 50%;
+    // border-bottom-color: transparent;
+    // border-top-width: 7px;
+    // border-left-width: 6px;
+    // border-top-color: transparent;
+    padding: 20px;
+    // animation: rotate infinite 2s linear;
+    @keyframes rotate {
+        from {
+            transform: rotateZ(0deg);
+        }
+        
+        to {
+            transform: rotateZ(360deg);
+        }
+    }
+}

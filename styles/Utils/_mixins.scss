@@ -3,6 +3,12 @@
     flex-direction: column;
 }
 
+@mixin flexRowCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin linkInterest {
     color: $hoverTextColor;
     transform: scale(1.02);

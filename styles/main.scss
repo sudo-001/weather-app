@@ -5,9 +5,13 @@
 @import "./Base/html";
 
 
+@import "./Components/Loader";
+
+
 @import "./Layout/card";
 @import "./Layout/searchForm";
 @import "./Layout/listLocation";
+@import "./Layout/Loader-wrapper";
 
 
 @import "./pages/Home";
